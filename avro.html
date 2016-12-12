@@ -1,0 +1,70 @@
+<script type="text/javascript">
+    RED.nodes.registerType('avro-from-buffer',{
+        category: 'function',
+        color: '#FFFFFF',
+        defaults: {
+            name: {value:""},
+            schema: {required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "avro3.png",
+        label: function() {
+            return this.name||"avro-from-buffer";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="avro-from-buffer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+	<div class="form-row">
+        <label for="node-input-schema"><i class="icon-tag"></i> Schema</label>
+        <input type="text" id="node-input-schema" placeholder="Avro schema">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="avro-from-buffer">
+    <p>Avro from buffer.</p>
+    <p><b>Schema</b>  <i>The Avro schema.</i></p>
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    RED.nodes.registerType('avro-to-buffer',{
+        category: 'function',
+        color: '#FFFFFF',
+        defaults: {
+            name: {value:""},
+            schema: {required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "avro3.png",
+        label: function() {
+            return this.name||"avro-to-buffer";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="avro-to-buffer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+	<div class="form-row">
+        <label for="node-input-schema"><i class="icon-tag"></i> Schema</label>
+        <input type="text" id="node-input-schema" placeholder="Avro schema">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="avro-to-buffer">
+    <p>Avro to buffer.</p>
+    <p><b>Schema</b>  <i>The Avro schema.</i></p>
+</script>
